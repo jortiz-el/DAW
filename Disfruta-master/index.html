@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- github example -->
+<html>
+	<!-- add comment feature -->
+ <head>
+      <!-- github example 2 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Dis-Fruta</title>
+	<!-- Hojas de estilo -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/fancybox.css" rel="stylesheet" type="text/css" />
+	<link href="css/masonry.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css" />
+	<link href="css/color/yellow.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+ </head>
+ <body>
+
+	<!-- Cabecera -->
+        <!-- comentario -->
+	<div class="header">
+	 <div class="container">
+		<div class="row"> 
+
+		 <!-- Secondary Menu -->
+		 <ul class="nav nav-pills span6">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Mi Cuenta</a></li>
+			<li><a href="#">Cesta</a></li>
+			<li><a href="#">Abonar</a></li>
+		 </ul>
+
+		 <!-- Cabecera de la cesta -->
+		 <div class="cart"><i class="icon-shopping-cart"></i>
+			<p>&euro; 0,00 <span>( 0 )</span></p>
+
+			<!-- Cabecera del contenido de la cesta -->
+			<div class="cart-content">
+			 <div class="mini-cart-info">
+				<h3>Cesta</h3>
+				<p class="empty">Cesta vacía</p>
+			 </div>
+			</div>
+		 </div>
+
+		 <!-- Moneda -->
+		 <ul class="nav nav-pills currency">
+			<li class="active"><a href="#">&euro;</a></li>
+			<li><a href="#">$</a></li>
+			<li><a href="#">&pound;</a></li>
+		 </ul>
+
+		 <!-- Header Login -->
+		 <p class="log-reg"><a href="#">Accede</a> <a href="#">Regístrate</a></p>
+		 <div class="clearfix"></div>
+		</div>
+	 </div>
+	</div>
+
+	<!-- Logo --> 
+	<a href="#" id="logo"><img src="img/logo.png" alt="logo" /></a> 
+
+	<!-- Menú de navegación principal -->
+	<hr class="bordered" />
+	<div class="navbar-cont">
+	 <div class="container">
+		<div class="row">
+		 <div class="span12">
+			<div class="navbar">
+			 <div class="navbar-inner">
+				<div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse"><i class="icon-align-justify"></i></a>
+				 <div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav">
+					 <li class="active"><a href="index.html">Home</a></li>
+					 <li class="dropdown"><a href="about.html" class="dropdown-toggle" data-toggle="dropdown">Servicios<i class="icon-angle-down"></i></a> 
+
+						<!-- Dropdown Navbar -->
+						<ul class="dropdown-menu">
+						 <li><a href="about.html">About</a></li>
+						 <li><a href="services.html">Mantenimiento</a></li>
+						 <li><a href="full-width.html">Recogida</a></li>
+						 <li><a href="left-sidebar.html">Consultoría</a></li>
+						</ul>
+					 </li>
+					 <li class="dropdown"><a href="portfolio-columns.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio<i class="icon-angle-down"></i></a> 
+
+						<!-- Dropdown Navbar -->
+						<ul class="dropdown-menu">
+						 <li><a href="portfolio-columns.html">Portfolio Columns</a></li>
+						 <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+						 <li><a href="portfolio-detail.html">Portfolio Single</a></li>
+						</ul>
+					 </li>
+					 <li class="dropdown"><a href="blog-home.html" class="dropdown-toggle" data-toggle="dropdown">Blog<i class="icon-angle-down"></i></a> 
+
+						<!-- Dropdown Navbar -->
+						<ul class="dropdown-menu">
+						 <li><a href="blog-home.html">Blog Home</a></li>
+						 <li><a href="blog-post.html">Blog Post</a></li>
+						</ul>
+					 </li>
+					 <li class="dropdown"><a href="shop-home.html" class="dropdown-toggle" data-toggle="dropdown">Shop<i class="icon-angle-down"></i></a> 
+
+						<!-- Dropdown Navbar -->
+						<ul class="dropdown-menu">
+						 <li><a href="shop-home.html">Tienda virtual</a></li>
+						 <li><a href="category.html">Lista de categorías</a></li>
+						 <li><a href="product.html">Detalle de productos</a></li>
+						 <li><a href="cart.html">Cesta</a></li>
+						</ul>
+					 </li>
+					 <li><a href="contact.html">Contacto</a></li>
+					</ul>
+
+					<!-- Navbar Search -->
+					<form action="header-search" class="header-search">
+					 <fieldset>
+						<input type="text" placeholder="Search" />
+						<button><i class="icon-search"></i></button>
+					 </fieldset>
+					</form>
+				 </div>
+				</div>
+			 </div>
+			</div>
+		 </div>
+		</div>
+	 </div>
+	</div>
+	<hr class="bordered" />
+	<div class="container">
+	 <div class="row">
+		<div class="span12"> 
+
+		 <!-- Flex Slider -->
+		 <div class="flexslider">
+			<ul class="slides">
+			 <li><a href="#"><img src="banner/fotocarrusel1.jpg" alt="Slider" /></a></li>
+			 <li><a href="#"><img src="banner/fotocarrusel2.jpg" alt="Slider" /></a></li>
+			</ul>
+		 </div>
+		</div>
+	 </div>
+	</div>
+
+	<!-- Lista de Productos -->
+	<div class="products-list">
+	 <div class="container">
+		<h3><span>Productos</span> Destacados</h3>
+		<ul class="thumbnails">
+
+		 <!-- Products Single Box -->
+		 <li class="span3">
+			<div class="thumbnail"><a href="#" class="thumb"><img src="productos/uvas.png" alt="Uvas" /></a>
+			 <p><a href="#">Uvas moscatel de primera</a></p>
+			 <p class="price">&euro; 2,5 / Kg</p>
+			 <p class="rating"><i class="icon-star"><span>1</span></i><i class="icon-star"><span>2</span></i><i class="icon-star"><span>3</span></i><i class="icon-star-half-empty"><span>4</span></i><i class="icon-star-empty"><span>5</span></i></p>
+			 <input type="button" value="A la cesta" class="btn" />
+			 <a href="#" class="add-list"><i class="icon-star"></i>Wish List</a><a href="#" class="add-comp"><i class="icon-tasks"></i>Compare</a><span class="new">New</span></div>
+		 </li>
+
+		 <!-- Products Single Box -->
+		 <li class="span3">
+			<div class="thumbnail"><a href="#" class="thumb"><img src="productos/melocoton.png" alt="Melocoton" /></a>
+			 <p><a href="#">Melocotón grande</a></p>
+			 <p class="price">&euro; 4 / Kg</p>
+			 <p class="rating"><i class="icon-star"><span>1</span></i><i class="icon-star"><span>2</span></i><i class="icon-star"><span>3</span></i><i class="icon-star"><span>4</span></i><i class="icon-star-empty"><span>5</span></i></p>
+			 <input type="button" value="A la cesta" class="btn" />
+			 <a href="#" class="add-list"><i class="icon-star"></i>Wish List</a><a href="#" class="add-comp"><i class="icon-tasks"></i>Compara</a></div>
+		 </li>
+
+		 <!-- Products Single Box -->
+		 <li class="span3">
+			<div class="thumbnail"><a href="#" class="thumb"><img src="productos/melon.png" alt="Melon" /></a>
+			 <p><a href="#">Melón persa</a></p>
+			 <p class="price"><span>&euro; 5,5 / Kg</span> &euro; 5 / Kg</p>
+			 <p class="rating"><i class="icon-star"><span>1</span></i><i class="icon-star"><span>2</span></i><i class="icon-star"><span>3</span></i><i class="icon-star"><span>4</span></i><i class="icon-star-empty"><span>5</span></i></p>
+			 <input type="button" value="A la cesta" class="btn" />
+			 <a href="#" class="add-list"><i class="icon-star"></i>Wish List</a><a href="#" class="add-comp"><i class="icon-tasks"></i>Compara</a><span class="sale">Sale</span></div>
+		 </li>
+
+		 <!-- Products Single Box -->
+		 <li class="span3">
+			<div class="thumbnail"><a href="#" class="thumb"><img src="productos/fresas.png" alt="Fresas" /></a>
+			 <p><a href="#">Fresas murcianas</a></p>
+			 <p class="price">&euro; 3 / Kg</p>
+			 <p class="rating"><i class="icon-star"><span>1</span></i><i class="icon-star"><span>2</span></i><i class="icon-star"><span>3</span></i><i class="icon-star"><span>4</span></i><i class="icon-star-empty"><span>5</span></i></p>
+			 <input type="button" value="A la cesta" class="btn" />
+			 <a href="#" class="add-list"><i class="icon-star"></i>Wish List</a><a href="#" class="add-comp"><i class="icon-tasks"></i>Compara</a></div>
+		 </li>
+		</ul>
+	 </div>
+	</div>
+	<div class="container">
+	 <div class="row">
+		<div class="span12">
+		 <h2 class="text-center margin-top margin-bottom">Nuestros <span>Servicios</span></h2>
+
+		 <!-- Services List -->
+		 <ul class="thumbnails about-list">
+
+			<!-- Service Single -->
+			<li class="span3">
+			 <div class="thumbnail"><i class="icon-globe icon-service"></i>
+				<div class="caption">
+				 <h3><a href="#">Consultoría Ecológica</a></h3>
+				 <em>Agricultura ecológica</em>
+				 <div class="clearfix"></div>
+				 <p>Podemos ayudarte a practicar la agricultura ecológica con unos consejos sencillos.</p>
+				</div>
+			 </div>
+			</li>
+
+			<!-- Service Single -->
+			<li class="span3">
+			 <div class="thumbnail"><i class="icon-key icon-service"></i>
+				<div class="caption">
+				 <h3><a href="#">Instalación de regadío</a></h3>
+				 <em>Servicio Integral</em>
+				 <div class="clearfix"></div>
+				 <p>Deja en nuestras manos la instalación de la solución más idónea para regar tu huerta.</p>
+				</div>
+			 </div>
+			</li>
+
+			<!-- Service Single -->
+			<li class="span3">
+			 <div class="thumbnail"><i class="icon-leaf icon-service"></i>
+				<div class="caption">
+				 <h3><a href="#">Fitoterapia</a></h3>
+				 <em>Tratamientos para las plantas</em>
+				 <div class="clearfix"></div>
+				 <p>Nos aseguramos que las plantaciones sean sanas y productivas.</p>
+				</div>
+			 </div>
+			</li>
+
+			<!-- Service Single -->
+			<li class="span3">
+			 <div class="thumbnail"><i class="icon-wrench icon-service"></i>
+				<div class="caption">
+				 <h3><a href="#">Recogida de Fruta</a></h3>
+				 <em>Técnicas de última generación</em>
+				 <div class="clearfix"></div>
+				 <p>Aplicamos la tecnología más avanzada para un aprovechamiento óptimo de la cosecha.</p>
+				</div>
+			 </div>
+			</li>
+		 </ul>
+		 <hr />
+		</div>
+	 </div>
+	</div>
+
+
+	<!-- Footer -->
+	<div class="footer">
+	 <div class="container">
+		<div class="row"> 
+
+		 <!-- Footer Info -->
+		 <div class="span3">
+			<h5><i class="icon-globe"></i>DisFruta</h5>
+			<img src="productos/store.jpg" alt="Store" /> </div>
+		 <div class="span3">
+			<h5><i class="icon-globe"></i>Sobre nosotros</h5>
+			<p>Somos una empresa joven pero con extensa experiencia y conocimiento sobre los ciclos del campo y los procesos de su cosecha.Además de ser productores somos importadores y consultores en España y a nivel internacional.</p>
+		 </div>
+
+		 <!-- Footer Contact -->
+		 <div class="span3">
+			<h5><i class="icon-asterisk"></i>Contáctanos</h5>
+			<ul class="footer-contact">
+			 <li><i class="icon-map-marker"></i>123 Alegría de la Huerta</li>
+			 <li><i class="icon-phone"></i>123123123</li>
+			 <li><i class="icon-mobile-phone"></i>123123123</li>
+			 <li><i class="icon-envelope-alt"></i><a href="#">correo@email.com</a></li>
+			</ul>
+		 </div>
+
+		 <!-- Footer Social -->
+		 <div class="span3">
+			<h5><i class="icon-rss"></i>Síguenos</h5>
+			<div class="footer-social"> <a href="#" class="icon-facebook"></a> <a href="#" class="icon-twitter"></a> <a href="#" class="icon-google-plus"></a> <a href="#" class="icon-pinterest"></a> <a href="#" class="icon-linkedin"></a></div>
+		 </div>
+		</div>
+	 </div>
+	</div>
+
+	<!-- Footer Links -->
+	<div class="footer-links">
+	 <div class="container">
+		<div class="row">
+		 <div class="span3">
+			<h5><i class="icon-info"></i>Información</h5>
+			<ul>
+			 <li><a href="#">Sobre nosotros</a></li>
+			 <li><a href="#">Información de envío</a></li>
+			 <li><a href="#">Protección de datoa</a></li>
+			 <li><a href="#">Condiciones</a></li>
+			</ul>
+		 </div>
+		 <div class="span3">
+			<h5><i class="icon-comment"></i>Atención al cliente</h5>
+			<ul>
+			 <li><a href="#">Contáctanos</a></li>
+			 <li><a href="#">Devoluciones</a></li>
+			 <li><a href="#">Envío de pedidos</a></li>
+			 <li><a href="#">Mapa del sitiop</a></li>
+			</ul>
+		 </div>
+		 <div class="span3">
+			<h5><i class="icon-folder-open"></i>Extras</h5>
+			<ul>
+			 <li><a href="#">Marcas</a></li>
+			 <li><a href="#">Bono regalo</a></li>
+			 <li><a href="#">Socios</a></li>
+			 <li><a href="#">Ofertas especiales</a></li>
+			</ul>
+		 </div>
+		 <div class="span3">
+			<h5><i class="icon-unlock-alt"></i>Mi cuenta</h5>
+			<ul>
+			 <li><a href="#">Mi cuenta</a></li>
+			 <li><a href="#">Historial de pedidos</a></li>
+			 <li><a href="#">Publicaciones</a></li>
+			</ul>
+		 </div>
+		</div>
+	 </div>
+	 <hr class="bordered" />
+	</div>
+
+	<!-- Copy -->
+	<div class="copy">
+	 <div class="container">
+		<div class="row">
+		 <div class="span12"> 
+
+			<!-- Cards --> 
+			<img src="img/cards.png" alt="Cards" />
+			<p class="text-center">Powered by <strong>OpenCart</strong> - &copy; 2013 <a href="#">Your Store</a></p>
+		 </div>
+		</div>
+	 </div>
+	</div>
+        <!-- Comentario -->
+	<!-- to Top -->
+	<div id="toTop"><i class="icon-chevron-up icon-white"></i></div>
+ </body>
+</html>
