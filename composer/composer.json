@@ -1,0 +1,17 @@
+{
+    "name": "casa/composer",
+    "description": "primer composer",
+    "type": "json",
+    "require": {
+        "monolog/monolog": "^1.0",
+        "laravel/framework": "^5.1",
+        "laravel/laravel": "^5.1"
+    },
+    "license": "git",
+    "authors": [
+        {
+            "name": "jortiz-el",
+            "email": "ojoao_funkyman@hotmail.com"
+        }
+    ]
+}
