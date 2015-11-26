@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpdocumentor/reflection-docblock": "^2.0",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*"
+    }
+}

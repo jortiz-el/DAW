@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<checkstyle version="1.3.0">
+  <file name="BD.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="3" severity="error" message="No summary for class \BD" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="11" severity="error" message="No summary for method __construct()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="20" severity="error" message="No summary for method getConexion()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="5" severity="error" message="No summary for property $basedatos" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="6" severity="error" message="No summary for property $usuario" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="7" severity="error" message="No summary for property $contrasenya" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="8" severity="error" message="No summary for property $equipo" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="10" severity="error" message="No summary for property $bd" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Usuario.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \Usuario" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="12" severity="error" message="No summary for property $nombre" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="13" severity="error" message="No summary for property $clave" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Auth.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="4" severity="error" message="No summary for class \Auth" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="17" severity="error" message="Argument $usuario is missing from the Docblock of login" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="17" severity="error" message="No summary for method login()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="21" severity="error" message="No summary for method usuario()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="25" severity="error" message="No summary for method check()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="29" severity="error" message="No summary for method __construct()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="32" severity="error" message="No summary for method getId()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="36" severity="error" message="No summary for method getNomUsuario()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="40" severity="error" message="Argument $nomUsuario is missing from the Docblock of setNomUsuario" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="40" severity="error" message="No summary for method setNomUsuario()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="44" severity="error" message="No summary for method getClave()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="48" severity="error" message="Argument $clave is missing from the Docblock of setClave" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="48" severity="error" message="No summary for method setClave()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="52" severity="error" message="No summary for method persist()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+</checkstyle>
