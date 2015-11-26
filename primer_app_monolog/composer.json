@@ -1,3 +1,4 @@
+
 {
     "name": "joao/primer_app_monolog",
     "description": "app con monolog",
@@ -11,5 +12,13 @@
             "name": "jortiz-el",
             "email": "ojoao_funkyman@hotmail.com"
         }
-    ]
+    ],
+    
+  "autoload": {
+    "psr-4": {
+      "Acme\\":"src/"
+    }
+  }
 }
+
+

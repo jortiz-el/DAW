@@ -1,0 +1,141 @@
+Fuente : http://phpenthusiast.com/blog/how-to-autoload-with-composer
+
+
+The simplest way is to autoload each class separately. For this purpose, all we need to do is define the array of paths to the classes that we want to autoload in the composer.json file.
+
+For example:
+
+
+{
+  "autoload": {
+    "classmap": [
+      "path/to/FirstClass.php",
+      "path/to/SecondClass.php"
+    ]
+  }
+}
+
+Update the composer autoloader from the command line:
+
+$ composer dump-autoload -o
+
+Now, we have to include the autoloader at the top of our scripts (e.g., index.php):
+
+
+<?php
+require "vendor/autoload.php";
+
+In the same way that we autoload classes, we can autoload directories that contain classes also by using the classmap key of the autoload:
+
+
+{
+  "autoload": {
+    "classmap": [
+      "path/to/FirstClass.php",
+      "path/to/directory"
+    ]
+  }
+}
+
+    In order to autoload directories we need to use namespaces.
+
+As we can see, classmap autoloading is not much different than the long list of requires that we used to use in the older PHP scripts. Yet, the better way to autoload is by using the PSR-4 standard.
+How to autoload the PSR-4 way?
+
+PSR-4 is the newest standard of autoloading in PHP, and it compels us to use namespaces.
+
+We need to take the following steps in order to autoload our classes with PSR-4:
+
+a. Put the classes that we want to autoload in a dedicated directory. For example, it is customary to convene the classes that we write into a directory called src/, thus, creating the following folder structure:
+
+your-website/
+  src/
+    Db.php
+    Page.php
+    User.php
+
+b. Give the classes a namespace. We must give all the classes in the src/ directory the same namespace. For example, let's give the namespce Acme to the classes. This is what the Page class is going to look like:
+
+
+<?php
+namespace Acme;
+
+class Page {
+    public function __construct()
+    {
+        echo "hello, i am a page.";
+    }
+}
+
+    We give the same namespace Acme to all of the classes in the src/ directory.
+
+c. Point the namespace to the src/ directory in the composer.json file . We point the directory that holds the classes to the namespace in the composer.json file. For example, this is how we specify in the composer.json file that we gave the namespace Acme to the classes in the src/ directory:
+
+
+{
+  "autoload": {
+    "psr-4": {
+      "Acme\\":"src/"
+    }
+  }
+}
+
+    We use the psr-4 key.
+    The namespace Acme points to the src/ directory.
+    The namespace has to end with \\. For example, "Acme\\".
+    You can replace the generic Acme with the name of your brand or website.
+
+d. Update the Composer autoloader:
+
+$ composer dumpautoload -o
+
+e. Import the namespace to your scripts. The scripts need to import the namespace as well as the autoloader, e.g., index.php:
+
+
+<?php 
+require "vendor/autoload.php";
+
+use Acme\Db;
+use Acme\User;
+use Acme\Page;
+ 
+$page1 = new Page();
+
+How to autoload if the directory structure is complex?
+
+Up till now, we demonstrated autoloading of classes that are found directly underneath the src/ folder, but how can we autoload a class that is found in a subdirectory? For example, we may want to move the Page class into the Pages directory and, thus, create the following directory tree:
+
+your-website/
+  src/
+    Db.php
+    User.php
+    Pages/
+      Page.php
+
+These are the steps that we need to follow:
+
+a. Redefine the namespace. We need to give the Page class a namespace in accordance with its new location in the src/Pages directory.
+
+
+<?php
+namespace Acme\Pages;
+
+public class Page {
+    function __construct()
+    {
+        echo "hello, i am a page.";
+    }
+}
+
+b. Use the namespaces in the scripts:
+
+
+<?php
+require "vendor/autoload.php";
+
+use Acme\Db;
+use Acme\User;
+use Acme\Pages\Page;
+
+
+$page1 = new Page();
