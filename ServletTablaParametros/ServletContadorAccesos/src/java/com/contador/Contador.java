@@ -9,10 +9,10 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class Contador {
     
-    private int contador = 1;
+    private int contador;
 
     public Contador() {
-       
+       this.contador = 0;
     }
     
     public int getContador() {
@@ -23,8 +23,9 @@ public class Contador {
         this.contador = contador;
     }
     
-    public void sumaContador(){
+    public int sumaContador(){
         this.contador += 1;
+        return this.contador;
     }
     
     

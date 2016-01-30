@@ -8,6 +8,7 @@ package com.sesiones;
 import com.contador.Contador;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,9 +20,10 @@ import javax.servlet.http.HttpServletResponse;
  * @author casa
  */
 @WebServlet(name = "SumSession", urlPatterns = {"/SumSession"})
-public class SumSession extends HttpServlet {
 
-    Contador bean;
+public class SumSession extends HttpServlet {
+    
+  @Inject Contador bean = new Contador(); 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -42,7 +44,7 @@ public class SumSession extends HttpServlet {
             out.println("<title>Servlet SumSession</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet SumSession at " + bean + "</h1>");
+            out.println("<h1>Has iniciado sesion " + bean.sumaContador() + " veces </h1>");
             out.println("</body>");
             out.println("</html>");
         }
